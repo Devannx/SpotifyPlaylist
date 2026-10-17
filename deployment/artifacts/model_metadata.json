@@ -1,1 +1,34 @@
-
+{
+  "project_name": "Spotify Playlist Recommendation Model",
+  "dataset_name": "Spotify Playlists",
+  "dataset_source": "https://www.kaggle.com/datasets/andrewmvd/spotify-playlists",
+  "model_file": "spotify_playlist_model.joblib",
+  "model_type": "TF-IDF Vectorizer and Nearest Neighbors",
+  "task": "Music recommendation based on similarity",
+  "algorithm": {
+    "feature_extraction": "TF-IDF",
+    "similarity_measure": "Cosine Similarity",
+    "recommendation_method": "Nearest Neighbors"
+  },
+  "input_features": [
+    "trackname",
+    "artistname",
+    "playlistname"
+  ],
+  "output": "A list of tracks with similar text features",
+  "preprocessing": [
+    "Handle missing values",
+    "Convert text to lowercase",
+    "Combine available text features",
+    "Transform text into TF-IDF vectors"
+  ],
+  "evaluation": {
+    "method": "Qualitative inspection of recommended tracks",
+    "metrics": [
+      "Recommendation relevance",
+      "Similarity of recommended tracks"
+    ]
+  },
+  "status": "Template - update after model training",
+  "created_at": "2026-10-17"
+}
