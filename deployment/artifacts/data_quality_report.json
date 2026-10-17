@@ -1,1 +1,49 @@
-
+{
+  "report_name": "Spotify Playlist Data Quality Report",
+  "dataset_source": "https://www.kaggle.com/datasets/andrewmvd/spotify-playlists",
+  "report_date": "2026-10-17",
+  "checks": {
+    "missing_values": {
+      "status": "pending",
+      "total_missing_values": null,
+      "details": {}
+    },
+    "duplicate_rows": {
+      "status": "pending",
+      "total_duplicate_rows": null
+    },
+    "column_validation": {
+      "status": "pending",
+      "required_columns": [
+        "trackname",
+        "artistname",
+        "playlistname"
+      ],
+      "missing_columns": []
+    },
+    "text_validation": {
+      "status": "pending",
+      "checks": [
+        "Empty strings",
+        "Whitespace-only values",
+        "Inconsistent capitalization"
+      ]
+    },
+    "data_consistency": {
+      "status": "pending",
+      "checks": [
+        "Track names are valid text",
+        "Artist names are valid text",
+        "Playlist names are valid text"
+      ]
+    }
+  },
+  "cleaning_actions": [
+    "Inspect missing values",
+    "Remove or handle duplicate records when appropriate",
+    "Normalize text values",
+    "Validate required columns"
+  ],
+  "overall_status": "Pending actual dataset inspection",
+  "note": "Status dan jumlah temuan harus diperbarui setelah pemeriksaan dataset dilakukan."
+}
