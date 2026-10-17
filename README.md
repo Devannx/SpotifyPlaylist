@@ -1,4 +1,4 @@
-#Spotify playlist dataset
+# Spotify playlist dataset
 
 This dataset is based on the subset of users in the #nowplaying dataset who publish their #nowplaying tweets via Spotify. In principle, the dataset holds users, their playlists and the tracks contained in these playlists. 
 
